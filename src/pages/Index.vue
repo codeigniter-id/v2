@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="columns">
-      <div class="column is-5">
+      <div class="column is-6">
         <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
         <h1 class="title is-1 has-margin-bottom-30">Codeigniter Indonesia</h1>
@@ -25,6 +25,9 @@
             <span>Dokumentasi</span>
           </a>
         </div>
+
+        <h1 class="title is-4 has-margin-bottom-10">Contributors</h1> 
+        <Contributors/>
       </div>
       <div class="column is-6">
         <github-feed login="codeigniter-id"></github-feed>
@@ -34,9 +37,8 @@
 </template>
 
 <script>
-import VueGithubActivity from "vue-github-activity";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-
+import Contributors from "~/components/Contributors.vue";
 export default {
   data() {
     return {
@@ -47,8 +49,8 @@ export default {
     title: "Codeigniter Indonesia Community",
     siteName: ""
   },
-  components: {
-    VueGithubActivity
+  components:{
+    Contributors
   }
 };
 </script>
