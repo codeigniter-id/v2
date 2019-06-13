@@ -1,29 +1,56 @@
 <template>
   <Layout>
-    
-    <!-- Learn how to use images here: https://gridsome.org/docs/images -->
-    <g-image alt="Example image" src="~/favicon.png" width="135" />
-    
-    <h1>Codeigniter Indonesia</h1>
-   
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur excepturi labore tempore expedita, et iste tenetur suscipit explicabo! Dolores, aperiam non officia eos quod asperiores
-    </p>
+    <div class="columns">
+      <div class="column is-5">
+        <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
-    <p class="home-links">
-      <a href="https://gridsome.org/docs" target="_blank" rel="noopener">Gridsome Docs</a>
-      <a href="https://github.com/gridsome/gridsome" target="_blank" rel="noopener">GitHub</a>
-    </p>
+        <h1 class="title is-1 has-margin-bottom-30">Codeigniter Indonesia</h1>
 
+        <p
+          class="subtitle is-6"
+        >CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications.</p>
+
+        <div class="buttons">
+          <a
+            href="https://github.com/bcit-ci/CodeIgniter/archive/3.1.10.zip"
+            class="button is-info"
+          >
+            <span class="icon">
+              <font-awesome :icon="download"/>
+            </span>
+            <span>Codeigniter Terbaru</span>
+          </a>
+
+          <a class="button is-primary" href="https://www.codeigniter.com/docs" target="_blank">
+            <span>Dokumentasi</span>
+          </a>
+        </div>
+      </div>
+      <div class="column is-6">
+        <github-feed login="codeigniter-id"></github-feed>
+      </div>
+    </div>
   </Layout>
 </template>
 
 <script>
+import VueGithubActivity from "vue-github-activity";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
 export default {
+  data() {
+    return {
+      download: faDownload
+    };
+  },
   metaInfo: {
-    title: 'Hello, world!'
+    title: "Codeigniter Indonesia Community",
+    siteName: ""
+  },
+  components: {
+    VueGithubActivity
   }
-}
+};
 </script>
 
 <style>
