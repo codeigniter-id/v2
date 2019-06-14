@@ -52,6 +52,19 @@
         </div>
         <div class="column is-4">
           <h1 class="title is-5">Community Support</h1>
+
+          <div class="is-inline-flex">
+            <figure class="image is-64x64">
+              <img src="https://image.flaticon.com/icons/png/128/25/25231.png">
+            </figure>
+            <figure class="image is-128x128 has-margin-left-20 has-margin-top-20">
+              <img src="https://www.rumahkomunitas.com/img/logo/logorklonghitam2.png">
+            </figure>
+
+            <figure class="image is-64x64 has-margin-left-20">
+              <img src="https://blog.dika.web.id/wp-content/uploads/2014/12/codeigniter.png">
+            </figure>
+          </div>
         </div>
       </div>
     </div>

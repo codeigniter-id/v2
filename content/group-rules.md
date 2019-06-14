@@ -1,6 +1,7 @@
 ---
 title: Group Rules
-date: 2019-01-07
+date: 2019-05-13
+author: Putera Kahfi
 published: true
 tags: ['Markdown', 'Cover Image']
 series: false

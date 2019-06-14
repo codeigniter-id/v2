@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 @import url("https://use.fontawesome.com/releases/v5.2.0/css/all.css");
 @import "bulma.scss";
+@import "helpers.scss";
 
 h1 {
   font-size: $size-1;
@@ -38,8 +39,8 @@ h4 {
   text-decoration: none;
 }
 
-.button{
-  
+.button {
+
   &.facebook {
     background: #4267b2;
     color: white;

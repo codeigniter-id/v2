@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <div class="columns">
-      <div class="column is-6">
+      <div class="column is-7">
         <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
         <h1 class="title is-1 has-margin-bottom-30">Codeigniter Indonesia</h1>
@@ -26,11 +26,19 @@
           </a>
         </div>
 
-        <h1 class="title is-4 has-margin-bottom-10">Posting Terbaru</h1>
+        <h1 class="title is-5 has-margin-top-30 has-margin-bottom-10">Posting Terbaru</h1>
+        <hr>
         <LatestPosting/>
       </div>
-      <div class="column is-6">
+      <div class="column is-5">
         <b-tabs type="is-boxed">
+          <b-tab-item>
+            <template slot="header">
+              <b-icon icon="fas fa-code-branch is-marginless "></b-icon>
+              <span>Github Feed</span>
+            </template>
+            <github-feed login="codeigniter-id"></github-feed>
+          </b-tab-item>
           <b-tab-item>
             <template slot="header">
               <b-icon icon="fas fa-users"></b-icon>
@@ -38,15 +46,6 @@
             </template>
 
             <Contributors/>
-          </b-tab-item>
-          <b-tab-item>
-            <template slot="header">
-             <b-icon icon="fas fa-code-branch is-marginless "></b-icon>
-              <span>
-                Github Feed
-              </span>
-            </template>
-            <github-feed login="codeigniter-id"></github-feed>
           </b-tab-item>
         </b-tabs>
       </div>
