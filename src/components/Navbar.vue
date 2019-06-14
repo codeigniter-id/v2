@@ -25,12 +25,15 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
-
           <div class="navbar-item">
             <g-link class="nav__link" to="/blog">blog</g-link>
           </div>
           <div class="navbar-item">
-            <g-link class="nav__link" to="/content/group-rules">facebook group rules</g-link>
+            <g-link class="nav__link" to="/event">event</g-link>
+          </div>
+
+          <div class="navbar-item">
+            <g-link class="nav__link" to="/jobs">lowongan</g-link>
           </div>
         </div>
         <div class="navbar-end">
