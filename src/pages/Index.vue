@@ -18,7 +18,7 @@
             <span class="icon">
               <font-awesome :icon="download"/>
             </span>
-            <span>Codeigniter Terbaru</span>
+            <span>Download Codeigniter Terbaru</span>
           </a>
 
           <a class="button is-primary" href="https://www.codeigniter.com/docs" target="_blank">
@@ -26,11 +26,29 @@
           </a>
         </div>
 
-        <h1 class="title is-4 has-margin-bottom-10">Contributors</h1> 
-        <Contributors/>
+        <h1 class="title is-4 has-margin-bottom-10">Posting Terbaru</h1>
+        <LatestPosting/>
       </div>
       <div class="column is-6">
-        <github-feed login="codeigniter-id"></github-feed>
+        <b-tabs type="is-boxed">
+          <b-tab-item>
+            <template slot="header">
+              <b-icon icon="fas fa-users"></b-icon>
+              <span>Kontributor</span>
+            </template>
+
+            <Contributors/>
+          </b-tab-item>
+          <b-tab-item>
+            <template slot="header">
+             <b-icon icon="fas fa-code-branch is-marginless "></b-icon>
+              <span>
+                Github Feed
+              </span>
+            </template>
+            <github-feed login="codeigniter-id"></github-feed>
+          </b-tab-item>
+        </b-tabs>
       </div>
     </div>
   </Layout>
@@ -39,6 +57,7 @@
 <script>
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import Contributors from "~/components/Contributors.vue";
+import LatestPosting from "~/components/LatestPosting.vue";
 export default {
   data() {
     return {
@@ -49,8 +68,9 @@ export default {
     title: "Codeigniter Indonesia Community",
     siteName: ""
   },
-  components:{
-    Contributors
+  components: {
+    Contributors,
+    LatestPosting
   }
 };
 </script>

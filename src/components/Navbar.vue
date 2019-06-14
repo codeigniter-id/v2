@@ -2,7 +2,14 @@
   <section class>
     <nav class="navbar" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <a class="navbar-item is-paddingless has-text-weight-bold	" href="/">{{ $static.metaData.siteName }}</a>
+        <g-link class="navbar-item has-text-weight-bold is-paddingless" to="/">
+          <img
+            class="is-paddingless has-padding-right-5 has-margin-bottom-10"
+            src="https://cdn1.iconfinder.com/data/icons/social-media-2106/24/social_media_social_media_logo_codeigniter-128.png"
+          >
+          <span>CODEIGNITER.ID</span>
+        </g-link>
+
         <a
           role="button"
           class="navbar-burger burger"
@@ -18,8 +25,12 @@
 
       <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
+
           <div class="navbar-item">
-            <g-link class="nav__link" to="/content/group-rules">Group Rules</g-link>
+            <g-link class="nav__link" to="/blog">blog</g-link>
+          </div>
+          <div class="navbar-item">
+            <g-link class="nav__link" to="/content/group-rules">facebook group rules</g-link>
           </div>
         </div>
         <div class="navbar-end">
@@ -33,11 +44,19 @@
                 <font-awesome :icon="facebook"/>
               </a>
 
-              <a target="_blank" class="button is-white is-marginless" href="https://t.me/codeigniterindonesia">
+              <a
+                target="_blank"
+                class="button is-white is-marginless"
+                href="https://t.me/codeigniterindonesia"
+              >
                 <font-awesome :icon="telegram"/>
               </a>
 
-              <a target="_blank" class="button is-white is-marginless" href="https://github.com/codeigniter-id">
+              <a
+                target="_blank"
+                class="button is-white is-marginless"
+                href="https://github.com/codeigniter-id"
+              >
                 <font-awesome :icon="github"/>
               </a>
             </div>

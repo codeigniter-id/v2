@@ -3,47 +3,36 @@
     <div class="column is-6" v-for="member in members" :key="member.id">
       <article class="box media">
         <div class="media-left">
-          <figure class="image is-64x64 ">
+          <figure class="image is-48x48">
             <img class="is-rounded" :src="member.avatar_url" alt="Image">
           </figure>
         </div>
         <div class="media-content">
           <div class="content">
             <p>
-              <strong>{{ member.login }}</strong>
+              <strong class="title is-5">{{ member.login }}</strong>
               <br>
               <small>
                 <a :href="member.html_url">
-                  <font-awesome :icon="github"/> &nbsp;github
+                  <i class="fab fa-github"></i>&nbsp;github
                 </a>
               </small>
             </p>
           </div>
-          <nav class="level is-mobile">
-            <div class="level-left">
-              <a class="level-item" aria-label="reply">
-                <span class="icon is-small">
-                  <i class="fas fa-reply" aria-hidden="true"></i>
-                </span>
-              </a>
-              <a class="level-item" aria-label="retweet">
-                <span class="icon is-small">
-                  <i class="fas fa-retweet" aria-hidden="true"></i>
-                </span>
-              </a>
-              <a class="level-item" aria-label="like">
-                <span class="icon is-small">
-                  <i class="fas fa-heart" aria-hidden="true"></i>
-                </span>
-              </a>
-            </div>
-          </nav>
         </div>
       </article>
     </div>
   </div>
 </template>
 
+
+<style lang="scss" scoped>
+.box {
+  background: #fafafa;
+  border: none;
+  box-shadow: none;
+}
+</style>
 
 <script>
 import {

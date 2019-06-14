@@ -1,5 +1,13 @@
 ---
-title:  Rules CodeIgniter Indonesia
+title: Group Rules
+date: 2019-01-07
+published: true
+tags: ['Markdown', 'Cover Image']
+series: false
+cover_image: ./images/alexandr-podvalny-220262-unsplash.jpg
+canonical_url: false
+description: "Rekan-rekan sekalian selamat datang di group __CodeIgniter Indonesia__ terbesar di facebook group page.
+"
 ---
 
 Hi all, Remember every friday is english day. So, don't hesitate to posting your thought in english this is one of CodeIgniter Indonesia program, Thanks for your participation.

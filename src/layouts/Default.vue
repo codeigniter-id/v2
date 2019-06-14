@@ -1,12 +1,16 @@
-
-
-    <template>
-  <transition name="fade" appear>
+<template>
+  <div>
     <div class="container">
       <Navbar class="has-margin-bottom-20"/>
-      <slot/>
     </div>
-  </transition>
+
+    <transition name="fade" appear>
+      <div class="container has-margin-bottom-20">
+        <slot/>
+      </div>
+    </transition>
+    <Footer/>
+  </div>
 </template>
 
 
@@ -56,10 +60,12 @@ body {
 </style>
 <script>
 import Navbar from "~/components/Navbar.vue";
+import Footer from "~/components/Footer.vue";
 
 export default {
   components: {
-    Navbar
+    Navbar,
+    Footer
   }
 };
 </script>
