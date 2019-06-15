@@ -19,15 +19,15 @@
             <div class="card-content">
               <div class="media">
                 <div class="media-content">
-                  <p class="title is-4">
-                    <g-link class :to="edge.node.path">{{ edge.node.title }}</g-link>
+                  <p class="title is-5">
+                    <g-link class="has-text-black-ter" :to="edge.node.path">{{ edge.node.title }}</g-link>
                   </p>
-                  <p class="subtitle is-6">{{ edge.node.author }}</p>
+                  <p class="subtitle is-7 has-text-grey-dark has-text-weight-semibold	">{{ edge.node.by }}</p>
                 </div>
               </div>
 
               <div class="content">
-                <p class="has-text-grey-lighter" v-html="edge.node.description"></p>
+                <p class="has-text-grey" v-html="edge.node.description"></p>
               </div>
             </div>
           </div>
@@ -54,6 +54,7 @@ query Events {
         id
         title
         author
+        by
         description
         cover_image
         path

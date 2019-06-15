@@ -1,7 +1,9 @@
 ---
-title: Pelatihan web codeigniter di jepara
+title: Pelatihan pemrograman aplikasi berbasis web dengan framework Codeigniter
 date: 2019-06-15
+event_date: 2019-06-15
 author: Putera Kahfi
+by: Dinas kearsipan dan perpustakaan jepara
 published: true
 tags: ["event"]
 series: false

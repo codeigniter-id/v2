@@ -18,6 +18,16 @@ module.exports = {
           // remark options
         }
       }
+    },
+    {
+      use: "@gridsome/source-filesystem",
+      options: {
+        path: "content/event/**/*.md",
+        typeName: "Event",
+        remark: {
+          // remark options
+        }
+      }
     }
   ],
 
