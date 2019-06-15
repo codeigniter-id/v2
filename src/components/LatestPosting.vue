@@ -2,17 +2,23 @@
   <div class="columns is-multiline">
     <div class="column is-6" v-for="edge in $static.posts.edges" :key="edge.node.id">
       <div class="card has-equal-height is-marginless">
-        <div class="card-content is-marginless is-paddingless">
+        <div class="card-content">
           <div class="media has-margin-bottom-10">
             <div class="media-content">
-              <p class="title is-4 has-margin-bottom-5">
-                <g-link :to="edge.node.path">{{edge.node.title}}</g-link>
+              <p class="subtitle is-7">
+                <span class="tag is-info">{{edge.node.category}}</span>
               </p>
-              <p class="is-size-7 has-text-grey-light">{{edge.node.author}} // {{edge.node.date}}</p>
+              <p class="title is-4 has-margin-bottom-30">
+                <g-link class="has-text-grey-darker" :to="edge.node.path">{{edge.node.title}}</g-link>
+              </p>
+
+              <p
+                class="subtitle is-7 has-text-grey-darker has-margin-bottom-5 has-text-weight-semibold	"
+              >Tanggal Posting : {{edge.node.date}}</p>
             </div>
           </div>
 
-          <div class="content has-text-grey">{{edge.node.description}}</div>
+          <div class="content has-text-grey-darker has-margin-bottom-10 is-family-secondary	" >{{edge.node.description}}</div>
 
           <span class="has-padding-top-15 is-size-7">
             <i class="fas fa-share"></i>
@@ -67,11 +73,13 @@ query Posts {
       node { 
         id
         author
-        date
+        published
+        date (format: "D MMMM YYYY")
         title
         description
-        content
+        category
         path
+        cover_image
       }
     }
   }

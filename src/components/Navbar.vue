@@ -29,19 +29,16 @@
             <g-link class="nav__link" to="/blog">blog</g-link>
           </div>
           <div class="navbar-item">
-            <g-link class="nav__link" to="/event">event</g-link>
+            <g-link class="nav__link" to="/events">events</g-link>
           </div>
 
-          <div class="navbar-item">
-            <g-link class="nav__link" to="/jobs">lowongan</g-link>
-          </div>
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="buttons">
               <a
                 target="_blank"
-                class="button is-white is-marginless"
+                class="button is-white "
                 href="https://www.facebook.com/groups/codeigniter.id/"
               >
                 <font-awesome :icon="facebook"/>
@@ -49,7 +46,7 @@
 
               <a
                 target="_blank"
-                class="button is-white is-marginless"
+                class="button is-white "
                 href="https://t.me/codeigniterindonesia"
               >
                 <font-awesome :icon="telegram"/>
@@ -57,7 +54,7 @@
 
               <a
                 target="_blank"
-                class="button is-white is-marginless"
+                class="button is-white "
                 href="https://github.com/codeigniter-id"
               >
                 <font-awesome :icon="github"/>

@@ -5,6 +5,16 @@
 @import "bulma.scss";
 @import "helpers.scss";
 
+body {
+  background: #fafafa;
+}
+
+.tabs.is-boxed li.is-active a {
+  background-color: #fafafa;
+  border-color: #dbdbdb;
+  border-bottom-color: transparent !important;
+}
+
 h1 {
   font-size: $size-1;
 }
@@ -40,7 +50,6 @@ h4 {
 }
 
 .button {
-
   &.facebook {
     background: #4267b2;
     color: white;
@@ -55,6 +64,11 @@ h4 {
     background: #313030;
     color: white;
   }
+}
 
-
+.navbar {
+  background-color: #FAFAFA;
+  min-height: 3.25rem;
+  position: relative;
+  z-index: 30;
 }

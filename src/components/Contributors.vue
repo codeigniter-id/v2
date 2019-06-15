@@ -10,7 +10,7 @@
         <div class="media-content">
           <div class="content">
             <p>
-              <strong class="title is-5">{{ member.login }}</strong>
+              <strong class="title is-6">{{ member.login }}</strong>
               <br>
               <small>
                 <a :href="member.html_url">
@@ -28,7 +28,7 @@
 
 <style lang="scss" scoped>
 .box {
-  background: #fafafa;
+  background: white;
   border: none;
   box-shadow: none;
 }

@@ -1,14 +1,20 @@
 <template>
   <Layout>
     <div class="columns">
-      <div class="column is-7">
+      <div class="column is-5">
         <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
-        <h1 class="title is-1 has-margin-bottom-30">Codeigniter Indonesia</h1>
+        <img
+          src="https://scontent-sin6-1.xx.fbcdn.net/v/t1.0-9/12803255_10206961661254942_8404149022163356260_n.jpg?_nc_cat=103&_nc_ht=scontent-sin6-1.xx&oh=3dc359e980ba816255f2653aa81ee487&oe=5DC71CD8"
+          alt
+        >
+        <h1 class="title is-3 has-margin-bottom-20">Codeigniter Indonesia</h1>
 
-        <p
-          class="subtitle is-6"
-        >CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications.</p>
+        <p class="is-size-6 is-family-secondary	">
+          Codeigniter Indonesia merupakan wadah tempat berkumpulnya pengguna Codeigniter Framework khususnya di Indonesia
+          Codeigniter sendiri merupakan php Framework MVC yang bersifat free dan opensource
+        </p>
+        <br>
 
         <div class="buttons">
           <a
@@ -18,19 +24,14 @@
             <span class="icon">
               <font-awesome :icon="download"/>
             </span>
-            <span>Download Codeigniter Terbaru</span>
+            <span>Download</span>
           </a>
 
-          <a class="button is-primary" href="https://www.codeigniter.com/docs" target="_blank">
+          <a class="button is-success" href="https://www.codeigniter.com/docs" target="_blank">
             <span>Dokumentasi</span>
           </a>
         </div>
 
-        <h1 class="title is-5 has-margin-top-30 has-margin-bottom-10">Posting Terbaru</h1>
-        <hr>
-        <LatestPosting/>
-      </div>
-      <div class="column is-5">
         <b-tabs type="is-boxed">
           <b-tab-item>
             <template slot="header">
@@ -49,6 +50,12 @@
           </b-tab-item>
         </b-tabs>
       </div>
+      <div class="column is-7">
+        <LatestPosting/>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column"></div>
     </div>
   </Layout>
 </template>
@@ -70,6 +77,11 @@ export default {
   components: {
     Contributors,
     LatestPosting
+  },
+  mounted() {
+    this.$snackbar.open(
+      `Default, positioned bottom-right with a green 'OK' button`
+    );
   }
 };
 </script>
